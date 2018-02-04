@@ -23,5 +23,5 @@ void loop() {
     digitalWrite(ledPin,LOW); //当voicePin电平高时LED灯熄灭
     }else{
       digitalWrite(ledPin,HIGH);  //当voicePin电平低时LED灯亮起
-      }
+      } 
 }
