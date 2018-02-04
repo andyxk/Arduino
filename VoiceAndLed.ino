@@ -6,7 +6,8 @@
  *使用注意：此传感器只能识别声音的有无（根据震动原理）
  *不能识别声音的大小或者特定频率的声音
  *输出形式 数字开关量输出（0和1高低电平）
-*/char ledPin = 6; //led要插入的引脚
+*/
+char ledPin = 6; //led要插入的引脚
 char voicePin = 2; //声音模块要插入的引脚
 char voiceHighLow = 0; //读到voicePin的高低
 void setup() {
