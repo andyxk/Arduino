@@ -9,7 +9,7 @@
 */
 char ledPin = 6; //led要插入的引脚
 char voicePin = 2; //声音模块要插入的引脚
-char voiceHighLow = 0; //读到voicePin的高低
+char voiceHighLow; //将要读取到voicePin的高低
 void setup() {
   pinMode(ledPin,OUTPUT); //设置ledPin针脚为输出模式
   pinMode(voicePin,INPUT);  //设置voicePin的针脚为输入模式
@@ -22,6 +22,6 @@ void loop() {
   if(voiceHighLow == HIGH){ //假设voiceHighLow等于高电平
     digitalWrite(ledPin,LOW); //当voicePin电平高时LED灯熄灭
     }else{
-      digitalWrite(ledPin,HIGH  );  //当voicePin电平低时LED灯亮起
+      digitalWrite(ledPin,HIGH);  //当voicePin电平低时LED灯亮起
       }
 }
